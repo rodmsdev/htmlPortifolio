@@ -12,13 +12,15 @@
 </head>
 
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu withe-bg">
         <div class="main-content menu-content">
-        <h1>
-            <a href="#intro">Logo</a>
+        <h1 onclick="getElementById('close-menu').checked = false">
+            <a href="#intro">rodmsdev</a>
         </h1>
         <nav>
-            <ul>
+            <ul onclick="getElementById('close-menu').checked = false">
                 <li><a href="#intro">INTRO</a></li>
                 <li><a href="#middle">JOBS</a></li>
                 <li><a href="#grid-one">GRID</a></li>
@@ -65,26 +67,23 @@
 
     <section id="grid-one" class="grid-one main-bg section">
         <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">My grid</h2>
+        <h2 class="grid-main-heading school">Education</h2>
 
-            <p class="grid-description">Description.</p>
+            <p class="grid-description school2">Small description.</p>
         <div class="grid">
             <article>
-                <h3>Title 1</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit architecto aspernatur laborum vero 
-                alias facilis harum possimus modi. Rerum fuga a et architecto non atque totam accusamus inventore, odio impedit!
+                <h3>Petroleum Engineering</h3>
+                <p class="education">Graduated in petroleum engineering with a strong academic base.
                 </p>
             </article>
             <article>
-                <h3>Title 2</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit architecto aspernatur laborum vero 
-                alias facilis harum possimus modi. Rerum fuga a et architecto non atque totam accusamus inventore, odio impedit!
+                <h3>Analysis and systems development</h3>
+                <p class="education">Course in progress, focus on FullStack Dev.
                 </p>
             </article>
             <article>
-                <h3>Title 3</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit architecto aspernatur laborum vero 
-                alias facilis harum possimus modi. Rerum fuga a et architecto non atque totam accusamus inventore, odio impedit!
+                <h3>Udemy</h3>
+                <p class="education">Complementary training in courses.
                 </p>
             </article>
         </div>
@@ -129,7 +128,7 @@
         </div>
         <div class="contact-form">
             <fieldset class="form-grid">
-                <legend>Contact me!</legend>
+                <legend>Contact me</legend>
 
                 <div class="form-group">
                     <label for="first-name">First Name</label>
@@ -171,6 +170,6 @@
         </div>
         </div>
     </section>
-
+    <a class="back-to-top" href="#">➤</a>
 </body>
 </html>
